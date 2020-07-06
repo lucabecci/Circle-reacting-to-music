@@ -16,7 +16,7 @@ loaded = () =>{
     if(!song.isPlaying()){
       touchButton.play()
       song.play()
-      song.setVolume(0.60)
+      song.setVolume(0.50)
       button.html('pause')
     }else{
       touchButton.play()
@@ -30,7 +30,7 @@ loaded = () =>{
 function draw() {
   background(0);
     let vol = amp.getLevel();
-    let diameter = map(vol, 0, 0.90, 100, 200)
+    let diameter = map(vol, 0, 0.50, 100, 200)
     noFill();
     strokeWeight(4);
     stroke(random(50,100),random(100,150),random(0,50))
