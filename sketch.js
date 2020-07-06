@@ -16,7 +16,7 @@ loaded = () =>{
     if(!song.isPlaying()){
       touchButton.play()
       song.play()
-      song.setVolume(0.10)
+      song.setVolume(0.60)
       button.html('pause')
     }else{
       touchButton.play()
